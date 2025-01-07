@@ -5,3 +5,11 @@ module "custtopus_viewer_bindings" {
     "roles/bigquery.admin",
   ]
 }
+
+module "custtopus_viewer_bindings2" {
+  member          = "ghi"
+  roles = [
+    "roles/bigquery.admin",
+    "roles/viewer",
+  ]
+}
